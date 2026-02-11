@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Muscle x Engineer x Educator</title>
+    <meta name="description" content="限界を超えてからが本番。筋トレ×エンジニア×教育者のポートフォリオサイト。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&family=Noto+Sans+JP:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Critical CSS for loading state */
+        body { margin: 0; background: #000; overflow-x: hidden; color: white; }
+        #canvas-container { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; }
+        #loading { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #000; z-index: 9999; display: flex; justify-content: center; align-items: center; transition: opacity 1s ease; }
+        .spinner { width: 50px; height: 50px; border: 3px solid rgba(255,255,255,0.3); border-radius: 50%; border-top-color: #fff; animation: spin 1s ease-in-out infinite; }
+        @keyframes spin { to { transform: rotate(360deg); } }
+    </style>
+</head>
+<body>
+
+    <div id="loading"><div class="spinner"></div></div>
+    <div id="canvas-container"></div>
+
+    <nav class="main-nav">
+        <div class="logo">PORTFOLIO</div>
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#hero">TOP</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#career">CAREER</a></li>
+            <li><a href="#activities">WORKS</a></li>
+            <li><a href="#vision">VISION</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="hero" class="section hero-section">
+            <div class="content-wrapper">
+                <h1 class="glitch-text" data-text="BEYOND LIMITS">BEYOND LIMITS</h1>
+                <p class="subtitle">筋トレ × エンジニア × 教育者</p>
+                <div class="scroll-indicator">
+                    <span>SCROLL</span>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section text-section">
+            <div class="content-wrapper">
+                <span class="section-label">01 // WHO I AM</span>
+                <h2>限界を超えてからが本番</h2>
+                <div class="text-block">
+                    <p>自己規律のためのハードな筋トレ（週5〜6回）と、最新のIT技術、そして経営学を掛け合わせた独自のスタイルで活動しています。</p>
+                    <p>技術を単なる知識として教えるだけでなく、人の可能性を広げる体験として届けることを信条としています。</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="career" class="section text-section">
+            <div class="content-wrapper">
+                <span class="section-label">02 // HISTORY</span>
+                <h2>CAREER PATH</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <span class="year">PHASE 1</span>
+                        <h3>製造・開発の現場からスタート</h3>
+                        <p class="role">デンソー時代</p>
+                        <p>自動車搭載センサの特性評価やデータ検証、在庫管理などの業務に従事。現場でのデータ解析やDX化の検討を通じて、技術が業務をどう変えるかを実体験しました。</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="year">PHASE 2</span>
+                        <h3>エンジニアとしての深化</h3>
+                        <p class="role">NEXT・テックアイエス時代</p>
+                        <p>C言語やJavaを用いた半導体自動搬送システムのソフトウェア開発に携わり、設計からテストまでを一貫して担当。同時に、プログラミングスクールでの講師活動も開始し、「教えること」の楽しさに目覚めました。</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="year">PHASE 3</span>
+                        <h3>経営学への挑戦</h3>
+                        <p class="role">グロービス経営大学院</p>
+                        <p>現在は経営学修士（MBA）課程に身を置き、組織運営や人材マネジメント、テクノベートを体系的に学習。学んだ内容を即座に事業へ還元する実践的な学びを継続しています。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="activities" class="section text-section">
+            <div class="content-wrapper">
+                <span class="section-label">03 // CURRENT WORKS</span>
+                <h2>WHAT I DO</h2>
+                <div class="grid-layout">
+                    <div class="grid-item">
+                        <h3>次世代教育事業</h3>
+                        <p>小中学生向けのプログラミング授業や、地域コミュニティでのSTEAM教育を展開。島根県益田市内の小学校での出前授業や、中学生向けの情報科目講座の構築を行っています。</p>
+                    </div>
+                    <div class="grid-item">
+                        <h3>地域DX・IT活用支援</h3>
+                        <p>シニア向けのスマホ相談会やLINE講座を開催し、デジタルデバイドの解消に貢献。自治体や企業向けにGASを用いた業務効率化や、RPA（WinActor/アシロボ）の導入・移行支援も実施。</p>
+                    </div>
+                    <div class="grid-item">
+                        <h3>デザイン・アウトプット</h3>
+                        <p>Canvaを駆使した高いデザイン性のスライド制作や、自社キャラクター「クリエット君」を通じた情報発信、noteでの執筆活動など、クリエイティブな表現活動も並行して進めています。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section text-section">
+            <div class="content-wrapper">
+                <span class="section-label">04 // SKILLS</span>
+                <h2>TECHNICAL & SOFT SKILLS</h2>
+                <div class="skill-list">
+                    <div class="skill-category">
+                        <h3>Technical</h3>
+                        <ul>
+                            <li>GAS / Laravel</li>
+                            <li>Shopify / Tailwind CSS</li>
+                            <li>RPA (WinActor/Asirobo)</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Soft Skills</h3>
+                        <ul>
+                            <li>Presentation (Large scale)</li>
+                            <li>Management (MBA perspective)</li>
+                            <li>Project Leadership</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="vision" class="section text-section last-section">
+            <div class="content-wrapper">
+                <span class="section-label">05 // FUTURE</span>
+                <h2>VISION</h2>
+                <p class="vision-text">「プログラミングを通じた楽しい学びの場」をより多くの方に提供することを目指しています。</p>
+                <p class="vision-text">最終的には、AIや新しい技術を初心者にも分かりやすく伝える大規模な講演活動を行い、社会全体のデジタル活用能力の底上げに寄与することを見据えています。</p>
+            </div>
+        </section>
+
+        <footer>
+            <div class="content-wrapper">
+                <p>&copy; 2026 Creatte Inc.</p>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="js/three-bg.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
